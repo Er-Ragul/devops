@@ -91,7 +91,7 @@ function Devops(){
                                             if(post.hasOwnProperty('image')){
                                                 return(
                                                     <div className="my-6 has-text-centered" key={index}>
-                                                        <img src={`/${post.image}`} width={400}/>
+                                                        <img src={`/${post.image}`} width={post.size}/>
                                                     </div>
                                                 )
                                             }
@@ -152,7 +152,23 @@ function Devops(){
                                         <p className="mt-4 has-text-black poppins-regular">The goal is to build a robust and scalable CI/CD pipeline that can automate the build, test, and deployment of applications on on-prem servers using Azure DevOps. Once we've proven this setup works in an on-premises environment, we will extend the same architecture to Azure Cloud, highlighting how easily DevOps practices can be scaled and migrated.</p>
                                         <div className="buttons mt-5">
                                             <button className="button has-text-black poppins-regular" onClick={() => window.location.href="https://github.com/Er-Ragul/devops"}>GET SOURCE CODE</button>
-                                            <button className="button has-text-white poppins-regular is-link" onClick={() => window.location.href="/devops/intro"}>READ DOCS</button>
+                                            <button className="button has-text-white poppins-regular is-link" onClick={() => window.location.href="/devops/introduction"}>READ MORE</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div className="columns">
+                                <div className="columns mt-4">
+                                    <div className="column is-3-desktop is-size-6 is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
+                                        <img src={'/vmware.png'} width={300} style={{ borderRadius: 14 }}/>
+                                    </div>
+                                    <div className="column is-flex is-flex-direction-column ">
+                                        <p className="is-size-5 has-text-weight-bold has-text-black poppins-semibold">Environment (On-Prem Setup): CI/CD Pipeline Setup Using Azure DevOps</p>
+                                        <p className="mt-4 has-text-black poppins-regular">To achieve a fully automated application deployment in an <b>on-premise</b> environment using a <b>CI/CD pipeline powered by Azure DevOps</b>, the first step is to set up a reliable and scalable <b>local environment</b>. In this blog post, I’ll walk you through how I configured my setup to support this pipeline. This allows for a seamless DevOps experience—<b>without relying on cloud-hosted infrastructure</b> for core pipeline execution.</p>
+                                        <div className="buttons mt-5">
+                                            <button className="button has-text-black poppins-regular" onClick={() => window.location.href="https://github.com/Er-Ragul/devops"}>GET SOURCE CODE</button>
+                                            <button className="button has-text-white poppins-regular is-link" onClick={() => window.location.href="/devops/environment"}>READ MORE</button>
                                         </div>
                                     </div>
                                 </div>

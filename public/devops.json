@@ -4,7 +4,7 @@
             "introduction":[
                 {"title": "🚀 On-Prem Automated Application Deployment: CI/CD Pipeline Setup Using Azure DevOps – A Proof of Concept"},
                 {"meta": "Posted on: June 3, 2025 | By: H.Ragul"},
-                {"image": "devops.png"},
+                {"image": "devops.png", "size": 400},
                 {"summary": "This blog series will walk you through a proof of concept (PoC) implementation of an automated application deployment pipeline on an on-premises server, using a powerful combination of tools including Azure DevOps, GitHub, Docker, and Kubernetes (k3s). For local infrastructure setup, we’ll be leveraging VMware Workstation Pro to provision virtual machines that will simulate a real-world server environment."},
                 {"subtitle": "🎯 Objective"},
                 {"content": "Our goal is to build a robust and scalable CI/CD pipeline that can automate the build, test, and deployment of applications on on-prem servers using Azure DevOps. Once we've proven this setup works in an on-premises environment, we will extend the same architecture to Azure Cloud, highlighting how easily DevOps practices can be scaled and migrated."},
@@ -34,6 +34,57 @@
                 {"content": "Whether you're a DevOps engineer looking to explore hybrid deployment strategies or an IT team trying to modernize legacy systems, this series will provide practical insights and step-by-step guidance to build a CI/CD pipeline that works both on-prem and in the cloud."},
                 {"content": "Stay tuned for the next blog where we'll begin with setting up the on-prem environment and preparing our VMs for deployment."},
                 {"content": "Let’s automate, orchestrate, and innovate—<b>on-prem first, cloud next!</b>"}
+            ],
+
+            "environment": [
+                {"title": "🛠️ Environment Setup for On-Prem Automated Application Deployment: CI/CD Pipeline with Azure DevOps"},
+                {"meta": "Posted on: June 4, 2025 | By: H.Ragul"},
+                {"summary": "To achieve a fully automated application deployment in an <b>on-premise</b> environment using a <b>CI/CD pipeline powered by Azure DevOps</b>, the first step is to set up a reliable and scalable <b>local environment</b>. In this blog post, I’ll walk you through how I configured my setup to support this pipeline. This allows for a seamless DevOps experience—<b>without relying on cloud-hosted infrastructure</b> for core pipeline execution. 🚀"},
+                {"image": "vmware.png", "size": 600},
+                {"subtitle": "🧰 Tools and Technologies Used"},
+                {"content": "Here’s a quick overview of the tools involved:"},
+                {"list": [
+                    "💻 <b>VMware Workstation Pro</b> – For creating and managing local virtual machines",
+                    "🔧 <b>Azure DevOps</b> – To manage the CI/CD pipeline",
+                    "🌐 <b>GitHub</b> – As the centralized version control system",
+                    "🐳 <b>Docker</b> – For containerizing and running application components",
+                    "☸️ <b>K3s</b> – Lightweight Kubernetes distribution as the deployment target",
+                    "🗂️ <b>Git</b> – For source code management on the agent VM"
+                ]},
+                {"subtitle": "🧱 Local Environment Configuration"},
+                {"content": "To simulate a production-like on-prem environment, I set up <b>two virtual machines (VMs)</b> on <b>VMware Workstation Pro</b>. These VMs serve as the foundation of our DevOps infrastructure:"},
+                {"subheading": "1️⃣ Agent Server"},
+                {"content": "This VM is the workhorse of the CI/CD pipeline:"},
+                {"list": [
+                    "🤖 <b>Azure DevOps Agent</b>: Installed and configured as a self-hosted runner to execute pipeline jobs locally.",
+                    "🐳 <b>Docker</b>: Installed to handle container builds and execution.",
+                    "🔗 <b>Git</b>: Set up for source control to enable pulling and pushing code as needed."
+                ]},
+                {"content": "<i>💡 The agent server runs all major pipeline operations: building, testing, and packaging the app.</i>"},
+                {"subheading": "2️⃣ K3s Server"},
+                {"content": "This VM acts as the deployment target:"},
+                {"list": [
+                    "☸️ <b>K3s (Kubernetes lightweight distribution)</b>: Installed to simulate a real Kubernetes cluster in an on-prem setup.",
+                    "📦 This is where the final application is deployed once it’s built and tested by the agent."
+                ]},
+                {"content": "<i>💡 K3s gives us a Kubernetes environment with a smaller footprint—perfect for local testing.</i>"},
+                {"subtitle": "🔄 Version Control with GitHub"},
+                {"content": "Even though the CI/CD process runs locally, the <b>source code is hosted on GitHub</b>:"},
+                {"list": [
+                    "🔐 Centralized and secure source control",
+                    "🔄 Integrated with Azure DevOps through service connections",
+                    "👥 Enables team collaboration and clean version tracking"
+                ]},
+                {"content": "This hybrid approach keeps the <b>pipeline execution local</b> but uses cloud-based GitHub for version management and collaboration."},
+                {"subtitle": "✅ Conclusion"},
+                {"content": "With this setup, we now have a <b>fully functional on-prem environment</b> ready for automated deployments using Azure DevOps. This configuration:"},
+                {"list": [
+                    "Mimics a real production environment 💼",
+                    "Offers flexibility and control ⚙️",
+                    "Reduces reliance on cloud infrastructure 🌍"
+                ]},
+                {"content": "Next up, I’ll guide you through configuring the <b>Azure DevOps pipeline</b> itself—connecting it to the agent, building Docker images, and deploying them to the K3s cluster. 🔧📦🚀"},
+                {"content": "<b>Stay tuned!</b> 👀"}
             ]
         }
     ]
