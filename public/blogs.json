@@ -1,0 +1,415 @@
+{
+  "blogs": [
+    {
+      "portfolio-development": [
+        {
+          "title": "💡 From Idea to Deployment: Building My Portfolio Website the Smart Way"
+        },
+        {
+          "summary": "In the digital age, having an online presence is more than a luxury—it's a necessity, especially for developers, designers, and creatives. I recently built and deployed my own portfolio website, and in this post, I’ll walk you through why I created it, what tools and technologies I used, and how I brought the whole project to life."
+        },
+        {
+          "subtitle": "Why I Built My Portfolio Website"
+        },
+        {
+          "paragraph": "Creating a personal portfolio was a long-awaited goal for me. I wanted a dedicated space to showcase my projects, share what I’ve learned, and connect with potential clients, recruiters, or collaborators."
+        },
+        {
+          "paragraph": "But beyond just listing my work, I wanted something more dynamic:"
+        },
+        {
+          "list": [
+            "A Single Page Application (SPA) for a smoother user experience.",
+            "A custom domain to represent my personal brand.",
+            "A future-proof structure that I could keep updating with new features."
+          ]
+        },
+        {
+          "paragraph": "I started with an intuitive visual tool to sketch out the design, then transitioned into full control with modern web technologies."
+        },
+        {
+          "subtitle": "What Tools I Used"
+        },
+        {
+          "paragraph": "To bring my vision to life, I used a combination of beginner-friendly tools and professional-grade frameworks:"
+        },
+        {
+          "paragraph": "1. <b>Mobirise</b> – The Design Blueprint"
+        },
+        {
+          "paragraph": "I began by designing my site with Mobirise, a drag-and-drop website builder. It helped me prototype quickly without writing code, giving me a clear idea of how I wanted the final site to look and behave. This step was crucial for refining the layout, choosing components, and visualizing the content structure."
+        },
+        {
+          "paragraph": "2. <b>React + Vite</b> – The SPA Framework"
+        },
+        {
+          "paragraph": "Once the design was ready, I recreated the entire site using React with the Vite build tool. This allowed me to:"
+        },
+        {
+          "list": [
+            "Convert the static Mobirise design into a dynamic SPA.",
+            "Write reusable components for future scalability.",
+            "Utilize Vite’s fast build process and hot module replacement for a smooth development experience."
+          ]
+        },
+        {
+          "paragraph": "I manually coded the HTML and CSS, ensuring the site was clean, responsive, and optimized."
+        },
+        {
+          "paragraph": "3. <b>Firebase Hosting</b> – Deployment Made Easy"
+        },
+        {
+          "paragraph": "For deployment, I chose Firebase Hosting due to its:"
+        },
+        {
+          "list": [
+            "Simple CLI-based deployment process.",
+            "Built-in support for SPAs.",
+            "Free hosting tier, perfect for personal projects."
+          ]
+        },
+        {
+          "paragraph": "4. <b>GoDaddy + Custom Domain</b>"
+        },
+        {
+          "paragraph": "To give the site a professional touch, I purchased a domain from GoDaddy and linked it with Firebase Hosting. Now, my portfolio is live on a clean, branded domain—making it easier to share and remember."
+        },
+        {
+          "subtitle": "How I Built and Deployed It"
+        },
+        {
+          "paragraph": "Here’s a step-by-step breakdown of my process:"
+        },
+        {
+          "subheading": "✨ Step 1: Design in Mobirise"
+        },
+        {
+          "list": [
+            "Created layout using drag-and-drop components.",
+            "Finalized section structure (hero, projects, about, contact, etc.).",
+            "Exported the site to study the HTML/CSS structure."
+          ]
+        },
+        {
+          "subheading": "🔧 Step 2: Set Up React with Vite"
+        },
+        {
+          "list": [
+            "new project using npm create vite@latest.",
+            "Structured the app into components (Header, Footer, Projects, etc.).",
+            "Transferred and refactored Mobirise HTML/CSS into reusable JSX components.",
+            "Implemented routing (if needed) using React Router (optional)."
+          ]
+        },
+        {
+          "subheading": "🎨 Step 3: Styling and Optimization"
+        },
+        {
+          "list": [
+            "Converted inline styles to CSS modules or a global stylesheet.",
+            "Ensured responsiveness across devices.",
+            "Added smooth scroll and transition effects for better UX."
+          ]
+        },
+        {
+          "subheading": "🚀 Step 4: Deploy with Firebase Hosting"
+        },
+        {
+          "list": [
+            "Initialized Firebase in my project folder with firebase init.",
+            "Selected Hosting and configured build folder as the public directory.",
+            "Ran npm run build and then firebase deploy."
+          ]
+        },
+        {
+          "subheading": "🌐 Step 5: Link Custom Domain"
+        },
+        {
+          "list": [
+            "Purchased domain from GoDaddy.",
+            "Connected it via Firebase Hosting settings.",
+            "Verified domain ownership and set up DNS records."
+          ]
+        },
+        {
+          "subtitle": "What's Next?"
+        },
+        {
+          "paragraph": "This portfolio site is just the beginning. I plan to keep it updated regularly with:"
+        },
+        {
+          "list": [
+            "New project showcases.",
+            "Interactive features (blogs, animations, live demos).",
+            "Possibly a backend integration for contact forms and blogs."
+          ]
+        },
+        {
+          "subtitle": "Final Thoughts"
+        },
+        {
+          "paragraph": "Building a portfolio from scratch might seem daunting, but combining design tools like Mobirise with powerful frameworks like React + Vite makes the process manageable and even enjoyable. With Firebase for hosting and a custom domain, my site is now professional, performant, and primed for the future."
+        },
+        {
+          "paragraph": "If you're thinking of building your own portfolio, start small, iterate often, and don't be afraid to mix tools. The journey is worth it."
+        }
+      ],
+      "id": "c2f7"
+    },
+    {
+      "devops-journey": [
+        {
+          "title": "🚀 Building My DevOps Journey: Serving My Portfolio Website with Node.js & Express"
+        },
+        {
+          "summary": "Welcome to the first post of my DevOps project! In this series, I’ll be documenting the process of transforming my personal portfolio website into a fully automated and production-ready web application by following modern DevOps practices. From writing the backend server to deploying it on a container orchestration platform, this project will serve as both a learning experience and a hands-on demonstration of end-to-end DevOps workflow."
+        },
+        {
+          "subtitle": "🛠️ Hosting My Portfolio Website with Node.js & Express"
+        },
+        {
+          "paragraph": "The journey begins with a simple, yet essential step—serving my portfolio website using my own custom-built server."
+        },
+        {
+          "paragraph": "For this, I’ve chosen Node.js with the Express.js framework. It gives me full control over how I want to serve my static files, set up routes, and handle HTTP requests—all with minimal configuration and high performance."
+        },
+        {
+          "paragraph": "Here’s a quick look at the code I wrote to serve my portfolio site:"
+        },
+        {
+          "code": "\n const express = require('express');\n const path = require('path');\n const app = express();\n\n // Serve static files from the React app\n app.use(express.static(path.join(__dirname, 'public')));\n\n // Handle all other routes with index.html (support for React Router)\n app.get(/(.*)/, (req, res) => {\n    res.sendFile(path.join(__dirname, 'public', 'index.html'));\n });\n\n // Start the server\n const PORT = process.env.PORT || 3000;\n app.listen(PORT, () => {\n    console.log('Server is running on port ${PORT}');\n });\n\n"
+        },
+        {
+          "paragraph": "This server script:"
+        },
+        {
+          "list": [
+            "Uses Express to handle routing and middleware.",
+            "Serves static files from a public directory.",
+            "Supports Single Page Application (SPA) routing by falling back to index.html for unmatched routes.",
+            "Runs on port 3000 or any port specified via environment variable."
+          ]
+        },
+        {
+          "subtitle": "🔧 What's Next?"
+        },
+        {
+          "paragraph": "Now that I have a working web server for my portfolio, the real fun begins. Here's a sneak peek at what I’ll be working on in the upcoming stages:"
+        },
+        {
+          "subheading": "🐧 Linux"
+        },
+        {
+          "paragraph": "I'll set up a virtual machine or cloud instance running a Linux-based OS to host the application, providing a solid foundation for my infrastructure."
+        },
+        {
+          "subheading": "🔧 Git & GitHub"
+        },
+        {
+          "paragraph": "The source code will be version-controlled using Git and hosted on GitHub. This will serve as the single source of truth and will allow seamless collaboration, issue tracking, and integration with CI/CD tools."
+        },
+        {
+          "subheading": "🤖 GitHub Actions"
+        },
+        {
+          "paragraph": "Automated workflows will be configured to run tests, build the app, and trigger deployment pipelines every time I push changes to the main branch."
+        },
+        {
+          "subheading": "🐳 Docker"
+        },
+        {
+          "paragraph": "I'll containerize the application to make it portable and easy to deploy across different environments."
+        },
+        {
+          "subheading": "☸️ Kubernetes"
+        },
+        {
+          "paragraph": "Next, I’ll deploy the containerized application onto a Kubernetes cluster for scalability, high availability, and efficient resource management."
+        },
+        {
+          "subheading": "🚀 ArgoCD"
+        },
+        {
+          "paragraph": "Finally, ArgoCD will be used to implement GitOps for continuous deployment, ensuring that my Git repository is always the source of truth for application state and configuration."
+        },
+        {
+          "subtitle": "🎯 Goals of This Project"
+        },
+        {
+          "list": [
+            "Apply real-world DevOps practices to a full-stack project",
+            "Understand the end-to-end lifecycle of deploying and maintaining a web application",
+            "Get hands-on experience with industry-standard tools and workflows"
+          ]
+        },
+        {
+          "subtitle": "📢 Stay Tuned!"
+        },
+        {
+          "paragraph": "This is just the beginning of my DevOps journey. In the next blog post, I’ll dive into setting up a Linux server and pushing my code to GitHub. From there, we’ll incrementally build a CI/CD pipeline and deploy our app using containers and orchestration tools."
+        },
+        {
+          "paragraph": "Whether you're a fellow developer, DevOps enthusiast, or just curious about how modern applications are developed and deployed—I'd love to have you follow along!"
+        }
+      ],
+      "id": "b015"
+    },
+    {
+      "containerizing": [
+        {
+          "title": "🚀 Containerizing My Portfolio Website with Docker"
+        },
+        {
+          "summary": "As part of modernizing my development workflow and making my portfolio website more portable and production-ready, I decided to containerize it using Docker. In this post, I’ll walk you through my simple setup using a Dockerfile and .dockerignore to containerize a Node.js-based website."
+        },
+        {
+          "subtitle": "🔧 Why Docker?"
+        },
+        {
+          "paragraph": "Docker allows you to package your application and all its dependencies into a lightweight container that can run reliably across different environments. For a personal portfolio site, this means:"
+        },
+        {
+          "list": [
+            "No more &quot;it works on my machine&quot; issues.",
+            "Simplified deployment across cloud platforms or servers.",
+            "Clean separation from the host environment."
+          ]
+        },
+        {
+          "subtitle": "📁 Project Structure"
+        },
+        {
+          "paragraph": "Here’s a quick look at the key files involved in containerizing my project:"
+        },
+        {
+          "subheading": "🐳 Dockerfile"
+        },
+        {
+          "code": "\n FROM node:alpine\n\n WORKDIR /webapp\n\n COPY . .\n\n RUN npm install\n\n EXPOSE 3000\n\n ENTRYPOINT [&quot;node&quot;, &quot;index.js&quot;]\n\n"
+        },
+        {
+          "subheading": "🔍 Breakdown:"
+        },
+        {
+          "list": [
+            "<span className='poppins-light' style='background-color: #1C1D21; color: white; padding: 0 5px;'>FROM node:alpine</span> : Starts from a minimal Node.js image for smaller size and faster builds.",
+            "<span className='poppins-light' style='background-color: #1C1D21; color: white; padding: 0 5px;'>WORKDIR /webapp</span> : Sets the working directory inside the container.",
+            "<span className='poppins-light' style='background-color: #1C1D21; color: white; padding: 0 5px;'>COPY . .</span> : Copies the contents of the project directory into the container.",
+            "<span className='poppins-light' style='background-color: #1C1D21; color: white; padding: 0 5px;'>RUN npm install</span> : Installs project dependencies.",
+            "<span className='poppins-light' style='background-color: #1C1D21; color: white; padding: 0 5px;'>EXPOSE 3000</span> : Declares that the app will run on port 3000.",
+            "<span className='poppins-light' style='background-color: #1C1D21; color: white; padding: 0 5px;'>ENTRYPOINT [&quot;node&quot;, &quot;index.js&quot;]</span> : Starts the application when the container runs."
+          ]
+        },
+        {
+          "subheading": "🐳 .dockerignore"
+        },
+        {
+          "code": "\n node_modules/\n Dockerfile\n\n"
+        },
+        {
+          "paragraph": "The <span className='poppins-light' style='background-color: #1C1D21; color: white; padding: 0 5px;'>.dockerignore</span> file ensures that:"
+        },
+        {
+          "list": [
+            "The local node_modules folder isn’t copied into the container (since we’ll install fresh dependencies inside).",
+            "The Dockerfile itself is excluded to reduce clutter inside the container."
+          ]
+        },
+        {
+          "subtitle": "🚀 Building and Running the Container"
+        },
+        {
+          "paragraph": "To build and run the container:"
+        },
+        {
+          "code": "\n docker build -t <image-name> .\n docker run --name <container-name> -d -p 3000:3000 <image-name>\n\n"
+        },
+        {
+          "paragraph": "Now, your portfolio site should be accessible at <span className='poppins-light' style='background-color: #1C1D21; color: white; padding: 0 5px;'>http://localhost:3000</span>."
+        },
+        {
+          "subtitle": "✅ Benefits Gained"
+        },
+        {
+          "paragraph": "After containerizing my portfolio:"
+        },
+        {
+          "list": [
+            "I can now easily deploy the same image to any environment that supports Docker.",
+            "I’ve eliminated environment setup issues.",
+            "My workflow is now more consistent, scalable, and deploy-friendly."
+          ]
+        },
+        {
+          "subtitle": "🧩 What’s Next?"
+        },
+        {
+          "paragraph": "I plan to:"
+        },
+        {
+          "list": [
+            "Push this image to Docker Hub.",
+            "Set up CI/CD using GitHub Actions.",
+            "Deploy the container on a cloud service like AWS, Render, or DigitalOcean."
+          ]
+        },
+        {
+          "paragraph": "If you're working on a Node.js app and want a repeatable, reliable deployment process, I highly recommend giving Docker a try. Happy coding! 🐳✨"
+        }
+      ],
+      "id": "724b"
+    },
+    {
+      "id": "a848",
+      "ragul": [
+        {
+          "title": "Ragul Harisankar"
+        },
+        {
+          "summary": "🚀 Migration Architect at DXC Technology | 4+ years of IT experience | Freelance Mentor | Self-learner on a mission to innovate 💡 Let's connect and build something great together! 🌟"
+        },
+        {
+          "code": " FROM node:alpine\n\n WORKDIR /webapp\n\n COPY . .\n\n RUN npm install\n\n EXPOSE 3000\n\n ENTRYPOINT [\"node\", \"index.js\"]"
+        }
+      ]
+    },
+    {
+      "id": "5071",
+      "blogging-simplified": [
+        {
+          "title": "How I Simplified My Blogging Workflow 🛠️"
+        },
+        {
+          "summary": "Originally, I used to write each blog post by creating a new .jsx file and embedding the content in HTML. It worked—but it was slow and repetitive. To fix that, I built a blog editor directly into my site, where I can write and submit posts through the UI. The content gets stored as JSON using json-server, making the whole process faster and more efficient."
+        },
+        {
+          "subtitle": "What Changed? 🔄"
+        },
+        {
+          "list": [
+            "<b>🧱 No more manual JSX files</b> – Blog posts are now rendered dynamically from JSON.",
+            "<b>⚡ Faster publishing</b> – Write and post directly from the browser.",
+            "<b>🛠️ Easier maintenance</b> – Just update the JSON to edit posts.",
+            "<b>🚀 Scalable setup</b> – Ready for future integration with a real backend or CMS."
+          ]
+        },
+        {
+          "paragraph": "This change turned my blog engine into a more dynamic and flexible system. Now, blog posts are simply JSON objects, each with fields like id, title, subtitle and content. The blog listing and detail pages pull data from the JSON file, and rendering happens dynamically using React components."
+        },
+        {
+          "subtitle": "What’s Next? 🔧"
+        },
+        {
+          "list": [
+            "✍️ Add Markdown support.",
+            "🔐 Secure the blog editor with authentication.",
+            "💾 Move from <span className='poppins-light' style='background-color: #1C1D21; color: white; padding: 0 5px;'>json-server</span> to a real database."
+          ]
+        },
+        {
+          "paragraph": "This project reminded me that good development isn’t just about building things—it’s about making things easier to build and maintain. If you’re building your own blog system or portfolio, consider how your tools can work for you, not against you."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+    "devops": [
+        {
+            "introduction":[
+                {"title": "🚀 On-Prem Automated Application Deployment: CI/CD Pipeline Setup Using Azure DevOps – A Proof of Concept"},
+                {"meta": "Posted on: June 3, 2025 | By: H.Ragul"},
+                {"image": "devops.png"},
+                {"summary": "This blog series will walk you through a proof of concept (PoC) implementation of an automated application deployment pipeline on an on-premises server, using a powerful combination of tools including Azure DevOps, GitHub, Docker, and Kubernetes (k3s). For local infrastructure setup, we’ll be leveraging VMware Workstation Pro to provision virtual machines that will simulate a real-world server environment."},
+                {"subtitle": "🎯 Objective"},
+                {"content": "Our goal is to build a robust and scalable CI/CD pipeline that can automate the build, test, and deployment of applications on on-prem servers using Azure DevOps. Once we've proven this setup works in an on-premises environment, we will extend the same architecture to Azure Cloud, highlighting how easily DevOps practices can be scaled and migrated."},
+                {"subtitle": "🔧 Tech Stack Overview"},
+                {"content": "Here’s a quick snapshot of the tools and technologies we’ll be using throughout this series:"},
+                {"list": [
+                    "Azure DevOps – For CI/CD pipeline management and automation.",
+                    "Git & GitHub – Version control and source code management.",
+                    "Docker – Containerizing applications for consistent deployment.",
+                    "Kubernetes (k3s) – Lightweight Kubernetes distribution for orchestrating deployments.",
+                    "VMware Workstation Pro – Local VM provisioning to simulate on-prem infrastructure."
+                ]},
+                {"subtitle": "📂 What to Expect in This Series"},
+                {"content": "This is the first in a series of blogs where we will progressively build and refine the CI/CD pipeline. Here's what you can look forward to:"},
+                {"list": [
+                    "Environment Setup – Creating VMs with VMware, installing necessary dependencies.",
+                    "Source Control Integration – Connecting GitHub repositories with Azure DevOps.",
+                    "CI Pipeline Implementation – Automating the build and testing process.",
+                    "Dockerization – Building container images from source code.",
+                    "CD Pipeline Implementation – Deploying containers to a k3s cluster on-prem.",
+                    "Monitoring & Logging – Implementing basic observability tools.",
+                    "Cloud Migration – Replicating the entire setup on Azure Cloud."
+                ]},
+                {"subtitle": "🧪 Why a Proof of Concept?"},
+                {"content": "A PoC allows us to validate the design and effectiveness of our DevOps approach in a controlled, local environment. It’s a low-risk way to identify gaps, improve configurations, and build confidence before scaling to production or migrating to the cloud."},
+                {"subtitle": "🌐 Ready to Dive In?"},
+                {"content": "Whether you're a DevOps engineer looking to explore hybrid deployment strategies or an IT team trying to modernize legacy systems, this series will provide practical insights and step-by-step guidance to build a CI/CD pipeline that works both on-prem and in the cloud."},
+                {"content": "Stay tuned for the next blog where we'll begin with setting up the on-prem environment and preparing our VMs for deployment."},
+                {"content": "Let’s automate, orchestrate, and innovate—<b>on-prem first, cloud next!</b>"}
+            ]
+        }
+    ]
+}
