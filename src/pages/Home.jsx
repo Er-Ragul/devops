@@ -1,9 +1,5 @@
 import React, { useState } from "react"
 
-import itsme from "../assets/itsme.jpeg"
-import mokup1 from "../assets/mokup_1.jpg"
-import mokup2 from "../assets/mokup_2.jpg"
-
 function Home(){
 
     let [navbar, setNavbar] = useState(false)
@@ -64,7 +60,7 @@ function Home(){
                         </div>
                     </div>
                     <div className="column is-6 is-flex is-justify-content-center is-align-items-center">
-                        <img src={itsme} width={400} style={{ borderRadius: 14 }}/>
+                        <img src={'/images/itsme.jpeg'} width={400} style={{ borderRadius: 14 }}/>
                     </div>
                 </div>
             </section>
@@ -145,21 +141,21 @@ function Home(){
                         <h1 className="title is-size-3 has-text-centered mb-6 has-text-black poppins-bold">Projects</h1>
                         <div className="columns mt-4">
                             <div className="column is-size-6 is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
-                                <img src={'/devops.png'} width={400} style={{ borderRadius: 14 }}/>
+                                <img src={'/images/devops.png'} width={400} style={{ borderRadius: 14 }}/>
                             </div>
                             <div className="column is-flex is-flex-direction-column ">
                                 <p className="is-size-4 has-text-weight-bold has-text-black poppins-semibold">CI/CD Pipeline Setup Using Azure DevOps</p>
                                 <p className="is-size-5 mt-4 has-text-black poppins-regular">The goal is to build a robust and scalable CI/CD pipeline that can automate the build, test, and deployment of applications on on-prem servers using Azure DevOps. Once we've proven this setup works in an on-premises environment, we will extend the same architecture to Azure Cloud, highlighting how easily DevOps practices can be scaled and migrated.</p>
                                 <div className="buttons mt-5">
                                     <button className="button has-text-black poppins-regular" onClick={() => window.location.href="https://github.com/Er-Ragul/devops"}>GET SOURCE CODE</button>
-                                    <button className="button has-text-white poppins-regular is-link" onClick={() => window.location.href="/devops/intro"}>READ DOCS</button>
+                                    <button className="button has-text-white poppins-regular is-link" onClick={() => window.location.href="/devops/introduction"}>READ DOCS</button>
                                 </div>
                             </div>
                         </div>
                         <div className="my-6"></div>
                         <div className="columns mt-4">
                             <div className="column is-size-6 is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
-                                <img src={mokup1} width={500} style={{ borderRadius: 14 }}/>
+                                <img src={'/images/mokup_1.jpg'} width={500} style={{ borderRadius: 14 }}/>
                             </div>
                             <div className="column is-flex is-flex-direction-column ">
                                 <p className="is-size-4 has-text-weight-bold has-text-black poppins-semibold">Self Manageable Custom VPN Solution</p>
@@ -172,7 +168,7 @@ function Home(){
                         <div className="my-6"></div>
                         <div className="columns mt-4">
                             <div className="column is-size-6 is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
-                                <img src={mokup2} width={500} style={{ borderRadius: 14 }}/>
+                                <img src={'/images/mokup_2.jpg'} width={500} style={{ borderRadius: 14 }}/>
                             </div>
                             <div className="column is-flex is-flex-direction-column">
                                 <p className="is-size-4 has-text-weight-bold has-text-black poppins-semibold">Teleport</p>

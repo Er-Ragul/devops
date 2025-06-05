@@ -12,7 +12,7 @@ function Blog(){
     let [content, setContent] = useState([])
 
     useEffect(() => {
-        fetch('/blogs.json')
+        fetch('/json/blogs.json')
         .then((response) => response.json())
         .then((json) => {
             json.blogs.map((post) => {

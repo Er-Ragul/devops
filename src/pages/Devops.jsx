@@ -14,7 +14,7 @@ function Devops(){
     let [content, setContent] = useState([])
 
     useEffect(() => {
-        fetch('/devops.json')
+        fetch('/json/devops.json')
         .then((response) => response.json())
         .then((json) => {
             json.devops.map((post) => {
@@ -145,7 +145,7 @@ function Devops(){
                             <div className="columns">
                                 <div className="columns mt-4">
                                     <div className="column is-3-desktop is-size-6 is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
-                                        <img src={'/devops.png'} width={200} style={{ borderRadius: 14 }}/>
+                                        <img src={'/images/devops.png'} width={200} style={{ borderRadius: 14 }}/>
                                     </div>
                                     <div className="column is-flex is-flex-direction-column ">
                                         <p className="is-size-5 has-text-weight-bold has-text-black poppins-semibold">Introduction: CI/CD Pipeline Setup Using Azure DevOps</p>
@@ -161,7 +161,7 @@ function Devops(){
                             <div className="columns">
                                 <div className="columns mt-4">
                                     <div className="column is-3-desktop is-size-6 is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
-                                        <img src={'/vmware.png'} width={300} style={{ borderRadius: 14 }}/>
+                                        <img src={'/images/vmware.png'} width={300} style={{ borderRadius: 14 }}/>
                                     </div>
                                     <div className="column is-flex is-flex-direction-column ">
                                         <p className="is-size-5 has-text-weight-bold has-text-black poppins-semibold">Environment (On-Prem Setup): CI/CD Pipeline Setup Using Azure DevOps</p>
@@ -169,6 +169,22 @@ function Devops(){
                                         <div className="buttons mt-5">
                                             <button className="button has-text-black poppins-regular" onClick={() => window.location.href="https://github.com/Er-Ragul/devops"}>GET SOURCE CODE</button>
                                             <button className="button has-text-white poppins-regular is-link" onClick={() => window.location.href="/devops/environment"}>READ MORE</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div className="columns">
+                                <div className="columns mt-4">
+                                    <div className="column is-3-desktop is-size-6 is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
+                                        <img src={'/images/registry.png'} width={300} style={{ borderRadius: 14 }}/>
+                                    </div>
+                                    <div className="column is-flex is-flex-direction-column ">
+                                        <p className="is-size-5 has-text-weight-bold has-text-black poppins-semibold">Agent Server Activation for On-Prem Automated Application Deployment</p>
+                                        <p className="mt-4 has-text-black poppins-regular">In this post, I'll walk you through how I set up the agent server 🖥️. We'll begin with the installation of Docker 🐳 and the Azure DevOps pipeline agent ⚙️. These installations are fairly straightforward, so I’ll simply include the official documentation links below for your reference 📄🔗.</p>
+                                        <div className="buttons mt-5">
+                                            <button className="button has-text-black poppins-regular" onClick={() => window.location.href="https://github.com/Er-Ragul/devops"}>GET SOURCE CODE</button>
+                                            <button className="button has-text-white poppins-regular is-link" onClick={() => window.location.href="/devops/activation"}>READ MORE</button>
                                         </div>
                                     </div>
                                 </div>
