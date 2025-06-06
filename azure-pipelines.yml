@@ -13,5 +13,8 @@ steps:
 - script: npm run build
   displayName: 'Build React App'
 
-- script: echo "Build completed"
-  displayName: 'Build completed'
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.SourcesDirectory)/build'
+    ArtifactName: 'react-app'
+    publishLocation: 'Container'
