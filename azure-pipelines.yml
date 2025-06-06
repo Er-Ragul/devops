@@ -7,9 +7,11 @@ pool:
   name: Default
 
 steps:
+- script: npm install
+  displayName: 'Install Binaries'
+
 - script: npm run build
   displayName: 'Build React App'
 
 - script: echo "Build completed"
   displayName: 'Build completed'
-  
