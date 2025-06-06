@@ -1,0 +1,15 @@
+# Azure pipeline yaml script for building react app.
+
+trigger:
+- main
+
+pool:
+  name: Default
+
+steps:
+- script: npm run build
+  displayName: 'Build React App'
+
+- script: echo "Build completed"
+  displayName: 'Build completed'
+  
