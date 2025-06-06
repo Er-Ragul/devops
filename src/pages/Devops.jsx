@@ -70,7 +70,7 @@ function Devops(){
                         </Helmet>
                         <section className="section is-medium">
                             <div className="columns is-flex is-justify-content-center">
-                                <div className="column is-10-desktop">
+                                <div className="column is-10-desktop is-12-tablet is-12-mobile">
                                     {
                                         content.map((post, index) => {
                                             if(post.hasOwnProperty('title')){
