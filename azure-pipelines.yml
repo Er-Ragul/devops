@@ -15,6 +15,6 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.SourcesDirectory)/build'
+    PathtoPublish: '$(Build.SourcesDirectory)/dist'
     ArtifactName: 'react-app'
     publishLocation: 'Container'
