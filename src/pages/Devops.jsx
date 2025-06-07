@@ -49,7 +49,7 @@ function Devops(){
                         <div className="navbar-item">
                             <div className="field has-addons">
                                 <div className="control">
-                                    <input className="input" type="text" placeholder="Find a blog" />
+                                    <input className="input poppins-regular" type="text" placeholder="Find a blog" />
                                 </div>
                                 <div className="control">
                                     <button className="button poppins-regular">Search</button>
@@ -173,6 +173,21 @@ function Devops(){
                                     <p className="mt-4 has-text-black poppins-regular">In this post, I'll walk you through how I set up the agent server 🖥️. We'll begin with the installation of Docker 🐳 and the Azure DevOps pipeline agent ⚙️. These installations are fairly straightforward, so I’ll simply include the official documentation links below for your reference 📄🔗.</p>
                                     <div className="buttons mt-5">
                                         <button className="button has-text-white poppins-regular is-link" onClick={() => window.location.href="/devops/activation"}>READ MORE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        <div className="columns">
+                            <div className="columns mt-4">
+                                <div className="column is-3-desktop is-size-6 is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
+                                    <img src={'/images/pipeline.png'} width={400} style={{ borderRadius: 14 }}/>
+                                </div>
+                                <div className="column is-flex is-flex-direction-column ">
+                                    <p className="is-size-5 has-text-weight-bold has-text-black poppins-semibold">Automated React Application Building: CI/CD Pipeline Setup Using Azure DevOps</p>
+                                    <p className="mt-4 has-text-black poppins-regular">👋 In our previous blog, we walked through how to set up an agent server to run an Azure DevOps CI/CD pipeline. If you haven't checked it out yet, we recommend giving it a read first! 🧑‍💻. Now that your agent server is all set, let’s take it to the next level 🎯—automating the build process for a React application every time you push code to your GitHub repository. Yes, you heard that right! Every commit to the main branch will trigger a build pipeline in Azure DevOps. 🔁⚙️</p>
+                                    <div className="buttons mt-5">
+                                        <button className="button has-text-white poppins-regular is-link" onClick={() => window.location.href="/devops/build"}>READ MORE</button>
                                     </div>
                                 </div>
                             </div>

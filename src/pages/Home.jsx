@@ -148,7 +148,7 @@ function Home(){
                                 <p className="is-size-5 mt-4 has-text-black poppins-regular">The goal is to build a robust and scalable CI/CD pipeline that can automate the build, test, and deployment of applications on on-prem servers using Azure DevOps. Once we've proven this setup works in an on-premises environment, we will extend the same architecture to Azure Cloud, highlighting how easily DevOps practices can be scaled and migrated.</p>
                                 <div className="buttons mt-5">
                                     <button className="button has-text-black poppins-regular" onClick={() => window.location.href="https://github.com/Er-Ragul/devops"}>GET SOURCE CODE</button>
-                                    <button className="button has-text-white poppins-regular is-link" onClick={() => window.location.href="/devops/introduction"}>READ DOCS</button>
+                                    <button className="button has-text-white poppins-regular is-link" onClick={() => window.location.href="/devops"}>READ DOCS</button>
                                 </div>
                             </div>
                         </div>

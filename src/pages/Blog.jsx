@@ -49,7 +49,7 @@ function Blog(){
                             <div className="navbar-item">
                                 <div className="field has-addons">
                                     <div className="control">
-                                        <input className="input" type="text" placeholder="Find a blog" />
+                                        <input className="input poppins-regular" type="text" placeholder="Find a blog" />
                                     </div>
                                     <div className="control">
                                         <button className="button poppins-regular">Search</button>

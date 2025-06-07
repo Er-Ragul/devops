@@ -122,6 +122,53 @@
                 {"subtitle": "✅ Conclusion"},
                 {"content": "In this setup, I have successfully configured my <b>own local Docker registry</b> 🐳. This allows for efficient local image management and testing 🧪."},
                 {"content": "Once local deployment and testing are successful ✅, we will proceed to use the <b>Azure Container Registry (ACR)</b> ☁️🔐 for production or cloud-based deployments."}
+            ],
+            "build": [
+                {"title": "🚀 Automated React Application Building: CI/CD Pipeline Setup Using Azure DevOps"},
+                {"meta": "Posted on: June 7, 2025 | By: H.Ragul"},
+                {"image": "images/pipeline.png", "size": 800},
+                {"summary": "👋 In our previous blog, we walked through how to set up an agent server to run an Azure DevOps CI/CD pipeline. If you haven't checked it out yet, we recommend giving it a read first! 🧑‍💻"},
+                {"content": "Now that your agent server is all set, let’s take it to the next level 🎯—automating the build process for a React application every time you push code to your GitHub repository. Yes, you heard that right! Every commit to the main branch will trigger a build pipeline in Azure DevOps. 🔁⚙️"},
+                {"subtitle": "🎬 What Are We Setting Up?"},
+                {"content": "We'll be creating a CI pipeline that:"},
+                {"list": [
+                    "1. Listens for code changes in the main branch 📥",
+                    "2. Installs the required dependencies 🧩",
+                    "3. Builds the React app 🏗️",
+                    "4. Publishes the build output as an artifact 📦"
+                ]},
+                {"content": "This makes it super easy to automate your front-end deployment process."},
+                {"subtitle": "📄 Azure Pipeline YAML Script"},
+                {"code": "# Azure pipeline yaml script for building react app.\n\ntrigger:\n- main\n\npool:\n  name: Default\n\nsteps:\n- script: npm install\n  displayName: 'Install Binaries'\n\n- script: npm run build\n  displayName: 'Build React App'\n\n- task: PublishBuildArtifacts@1\n  inputs:\n    PathtoPublish: '$(Build.SourcesDirectory)/dist'\n    ArtifactName: 'react-app'\n    publishLocation: 'Container'"},
+                {"subheading": "🧩 Trigger Section"},
+                {"code": "trigger:\n- main"},
+                {"subheading": "🔁 What’s Happening Here?"},
+                {"content": "This line tells Azure DevOps to trigger the pipeline <b>every time a change is pushed to the</b> <span className='poppins-light' style='background-color: #1C1D21; color: white; padding: 0 5px;'>main</span> branch. Super handy for CI/CD workflows! 🛠️"},
+                {"subheading": "🏊‍♂️ Define the Pool"},
+                {"code": "pool:\n  name: Default"},
+                {"subheading": "🖥️ Explanation"},
+                {"content": "Here, we’re specifying the <b>agent pool</b> to use — in this case, it's the Default pool. This is where the pipeline will execute its jobs. Think of it as the machine doing all the heavy lifting. 💪"},
+                {"subheading": "🛠️ Steps to Build and Deploy"},
+                {"subheading": "1️⃣ Install Dependencies"},
+                {"code": "- script: npm install\n  displayName: 'Install Binaries'"},
+                {"content": "🧰 This step uses npm install to download and install all the project dependencies listed in your <span className='poppins-light' style='background-color: #1C1D21; color: white; padding: 0 5px;'>package.json</span>. It's like stocking up the toolbox before starting the work! 🧵🔧"},
+                {"subheading": "2️⃣ Build the React App"},
+                {"code": "- script: npm run build\n  displayName: 'Build React App'"},
+                {"content": "🏗️ This command compiles your React app into a production-ready bundle. The output usually goes into a folder like <span className='poppins-light' style='background-color: #1C1D21; color: white; padding: 0 5px;'>dist</span> or <span className='poppins-light' style='background-color: #1C1D21; color: white; padding: 0 5px;'>build</span>. It's the final packaging of your web application! 📦🌐"},
+                {"subheading": "3️⃣ Publish the Build Artifacts"},
+                {"code": "- task: PublishBuildArtifacts@1\n  inputs:\n    PathtoPublish: '$(Build.SourcesDirectory)/dist'\n    ArtifactName: 'react-app'\n    publishLocation: 'Container'"},
+                {"content": "📤 This task <b>publishes your compiled app</b> as an artifact named <span className='poppins-light' style='background-color: #1C1D21; color: white; padding: 0 5px;'>react-app</span>, which can then be downloaded, deployed, or used in release pipelines. It's like uploading your finished work to the cloud shelf for future use. ☁️📁"},
+                {"subheading": "📝 Note:"},
+                {"content": "The entire build process runs on our <b>self-hosted Linux runner machine</b> 🐧. Since we're building a React app ⚛️, the runner is pre-configured with <b>Node.js</b> 🟢 and <b>Git</b> 🧑‍💻 to ensure the pipeline works smoothly when the agent is activated."},
+                {"subtitle": "🎉 Conclusion"},
+                {"content": "With just a few lines of YAML, you've created a pipeline that:"},
+                {"list": [
+                    "🚀 Triggers on code changes",
+                    "📦 Installs dependencies",
+                    "🏗️ Builds your React app",
+                    "☁️ Publishes the output as a build artifact"
+                ]},
+                {"content": "🔜 Next, we'll build a Docker image 🐳 using the generated build artifact. This image will run an Express server 🚀 to serve the React app ⚛️ efficiently."}
             ]
         }
     ]
