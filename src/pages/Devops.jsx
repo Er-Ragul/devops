@@ -193,6 +193,21 @@ function Devops(){
                             </div>
                         </div>
                         <hr/>
+                        <div className="columns">
+                            <div className="columns mt-4">
+                                <div className="column is-3-desktop is-size-6 is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
+                                    <img src={'/images/release.png'} width={400} style={{ borderRadius: 14 }}/>
+                                </div>
+                                <div className="column is-flex is-flex-direction-column ">
+                                    <p className="is-size-5 has-text-weight-bold has-text-black poppins-semibold">🚀 Building Docker Image & Pushing to Local Docker Registry: CI/CD Pipeline Setup Using Azure DevOps 🐳</p>
+                                    <p className="mt-4 has-text-black poppins-regular">In this blog, we’ll walk through setting up a CI/CD release pipeline in Azure DevOps to build a Docker image and push it to a local Docker registry. This is a crucial part of modern DevOps workflows, especially when you're deploying apps within private environments.</p>
+                                    <div className="buttons mt-5">
+                                        <button className="button has-text-white poppins-regular is-link" onClick={() => window.location.href="/devops/release"}>READ MORE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
                     </section>
         }
         </>
